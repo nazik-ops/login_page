@@ -402,9 +402,9 @@ body{
     margin-top: -18px;
 }
   .container{
-        width: 85%;
+        width: 80%;
         height: 600px;
-        top: 20%;
+        top: 15%;
         left: 5%;
     }
     .container .content{
@@ -416,7 +416,7 @@ body{
         top: -20px;
         left:20%;
         width:250px;
-        height: 160px;
+        height: 130px;
       
     }
     .form_box.login{
@@ -448,3 +448,4 @@ body{
     }
 
 }
+
