@@ -1,0 +1,449 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background: black;
+}
+.header{
+    position: fixed;    
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 25px 12.5%;
+    background:transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    z-index: 100;
+}
+.logo_1{
+    color: white;
+    margin-left: -150px;
+    margin-top: 50px;
+}
+.navbar{
+    margin-left: 200px;
+    margin-top: -20px;
+}
+.navbar a{
+    position: relative;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 50px;
+}
+.navbar a::after{
+    content: '';
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   width: 100%;
+   height: 2px;
+    background: white;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+.navbar a:hover::after{
+    transform: translateY(0px);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+.search_bar{
+    width: 250px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin-left:800px;
+    margin-top: -30px;
+
+}
+.search_bar input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.search_bar input::placeholder{
+    color: white;
+}
+.search_bar button{
+    width: 40px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.search_bar button i{
+    font-size: 18px;
+    color: white;
+}
+.background{
+     width:100% ;
+     height: 100vh;
+     background: url(https://st5.depositphotos.com/47958670/65260/i/450/depositphotos_652608860-stock-photo-beautiful-sunset-mountains.jpg) no-repeat;
+     background-size: cover;
+     background-position: center;
+     filter: blur(10px);
+}
+.container{
+    position: absolute;
+    width: 75%;
+    height: 550px;
+    top: 25%;
+    left: 10%;
+    transform: translateY(-50%, );
+    background: url(https://st5.depositphotos.com/47958670/65260/i/450/depositphotos_652608860-stock-photo-beautiful-sunset-mountains.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container .content{
+    position: absolute;
+    top: 0%;
+    left: 0;
+  width: 58%;
+  height: 100%;
+  background:transparent;
+  padding: 60px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.content .logo{
+    font-size: 30px;
+}
+.content h2{
+    font-size: 40px;
+}
+.text-sci h2{
+    font-size: 40px;
+    line-height: 1;
+   }
+.text-sci p{
+    font-size: 15px;
+    margin: 20px 0;
+    font-weight: 700;
+   
+}
+.social-icons a i{
+    font-size: 22px;
+    color: white;
+    margin-right: 10px;
+    transition: 3s ease;
+}
+ .container .logreg_box{
+     position: absolute;
+    top: 0;
+    left: 700px;
+    width: calc(100% -50%);
+    height: 100%;  
+}
+.logreg_box .form_box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+   backdrop-filter:blur(10px);
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   color: white;
+   margin-left: 200px;
+    transition: .6s ease;
+}
+.logreg_box.form_box.login{
+   transform: translateX(0);
+   transition:transform .6s ease;
+}
+.form_box h2{
+    font-size: 32px;
+    text-align: center;
+}
+.form_box .input_box{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+.input_box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight:500;
+    color: white;
+    padding-right: 30px;
+}
+.input_box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.input_box input:focus + label,
+.input_box input:valid + label{
+    top: -5px;
+    font-size: 12px;
+    color: white;
+}
+.input_box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 20px;
+}
+ .form_box.remember-forget{
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forget label input{
+    accent-color: white;
+    margin-right: 20px;
+}
+.remember-forget a{
+    color: white;
+    text-decoration: none;
+     margin-left: 10px;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: red;
+    border: none;
+    margin-top: 30px;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    box-shadow:  0 0 10px rgba(0 , 0, 0, .5);
+}
+ .form_box .login-register{
+    font-size: 15px;
+    font-weight: 500;
+     text-align: center;
+     margin-top: 30px;
+     display: flex;
+     gap: 10px;
+}
+.login-register p a{
+     color: aliceblue;
+     font-weight: 500;
+     text-decoration: none;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+@media(max-width:500px){
+.logo_1{
+    margin-top: 40px;
+    margin-left: -60px;
+    font-size: 9px;
+}
+.navbar{
+    margin-left: 30px;
+    margin-top: -20px;
+   
+}
+.navbar a{
+     position: relative;
+       font-size: 9px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 45px;
+}
+.search_bar{
+    width: 95px;
+    height: 20px;
+    border: 2px solid white;
+    margin-left:320px;
+    margin-top: -18px;
+
+}
+ .search_bar input{ 
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+    margin-left: 10px;
+    padding-left: 10px;
+} 
+.search_bar button i{
+    font-size: 10px;
+    color: white;
+}
+.container{
+    position: absolute;
+    width: 85%;
+    height: 550px;
+    top: 25%;
+    left: 10%;
+}
+.container .content{
+    position: absolute;
+    top: 0%;
+    left: 0;
+  width: 58%;
+  height: 100%;
+  margin-left: -30px;
+}
+.content .logo{
+    font-size: 22px;
+   
+}
+.content h2{
+    font-size: 20px;
+     margin-top: -20px;
+     font-weight: 600;
+}
+.text-sci h2{
+    font-size: 25px;
+    line-height: 1;
+   }
+.text-sci p{
+    font-size: 9px;
+    font-weight: 600; 
+}
+ .container .logreg_box{
+     position: absolute;
+    top: 0;
+    left: 130px;
+    width: calc(100% -50%);
+    height: 100%;
+}
+.form_box h2{
+    font-size: 20px;
+    text-align: center;
+}
+.form_box .input_box{
+    position: relative;
+    width: 150px;
+    height: 50px;
+}
+ .form_box.remember-forget{
+    font-size: 14.5px;
+    font-weight: 500;
+} 
+.remember-forget label input{
+    accent-color: white;
+    margin-right: 20px;
+}
+.remember-forget a{
+    color: white;
+    text-decoration: none;
+     margin-left: 10px;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+}
+ .form_box .login-register{
+    font-size: 13px;
+    font-weight: 600;
+}
+.login-register p a{
+     font-weight: 600;
+}
+}
+@media(max-width:400px){
+   .header{
+    width: 350px;
+   }
+    .logo_1{
+        margin-left: -10px;
+    }
+    .navbar{
+        display: none;
+    }
+    .search_bar{
+    width: 85px;
+    height: 20px;
+    margin-left:200px;
+    margin-top: -18px;
+}
+  .container{
+        width: 85%;
+        height: 600px;
+        top: 20%;
+        left: 5%;
+    }
+    .container .content{
+        display: none;
+       
+    }
+    .logreg_box{
+        position: absolute;
+        top: 0;
+        left:20%;
+        width:250px;
+        height: 160px;
+      
+    }
+    .form_box.login{
+        width: 220px; 
+        margin-left:-100px;
+    }
+    .form_box .input_box{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+    margin-left: 10px;
+}
+ .remember-forget{
+    margin-left: 10px;
+ }
+    .input_box input{
+        width: 200px;
+         font-size: 26px;
+         margin-left: 20px;
+    }
+    .btn{
+        width: 200px;
+        margin-left: 10px;
+    }
+    .login-register p a{
+        margin-left: 10px;
+    }
+}
